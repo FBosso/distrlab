@@ -1,0 +1,27 @@
+# @package _global_
+# Tiny encoder -> latent -> decoder run on synthetic data. (toy example)
+# Replace every piece below with your own model/data.
+defaults:
+  - /component/component_1@component_1: example
+  - /component/component_2@component_2: example
+  - /component/component_3@component_3: example
+  - /component/loss@loss: example
+  - /component/optimizer@optimizer: adam
+  - /component/dataset@dataset: mock
+  - /component/collate@collate: example
+  - _self_
+
+n_embd: 32
+n_head: 2
+inp_seq_len: 8
+horizon: 4
+dropout: 0.1
+
+features:
+  - name: feature_1
+  - name: feature_2
+  - name: feature_3
+
+targets:
+  - name: feature_1
+  - name: feature_2

@@ -1,0 +1,5 @@
+_target_: models.component_2.latent_space.LatentSpace
+n_embd: ${n_embd}
+n_head: ${n_head}
+n_layer: 2
+dropout: ${dropout}

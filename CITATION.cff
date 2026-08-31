@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "distrlab"
+type: software
+authors:
+  - name: "FBosso"
+url: "https://github.com/FBosso/distrlab"
+repository-code: "https://github.com/FBosso/distrlab"
+license: MIT
+version: 0.1.0
+date-released: "2026-08-31"

@@ -1,0 +1,3 @@
+_target_: models.loss.custom_loss.ExampleLoss
+# for already made compoments, no code needed. Hydra instantitate 
+# the object automatically by readuing the _target_ line

@@ -1,0 +1,5 @@
+_target_: datasets.collate.collate_function.CollateFn
+features: ${features}
+targets: ${targets}
+inp_seq_len: ${inp_seq_len}
+horizon: ${horizon}

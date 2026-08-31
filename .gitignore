@@ -1,0 +1,14 @@
+.venv
+outputs/
+local_outputs/
+pipeline.yaml
+__pycache__/
+*.pyc
+
+src/hpc_logs/*
+!src/hpc_logs/README.md
+
+Dockerfile
+.dockerignore
+kfp_pipeline_local/
+

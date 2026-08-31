@@ -1,0 +1,16 @@
+defaults:
+  - experiment: example #change this with the name of the experiment
+  - _self_
+
+#to pass the fundamental parameters to the trainer (expand as needed)
+trainer_config:
+  max_epochs: 10
+  batch_size: 32
+  data_loader_workers: 4
+  snapshot_path: ${hydra:runtime.output_dir}/snapshot.pt
+  save_every: 1
+
+#to create a new folder in outputs/ for each experiment run
+hydra:
+  run:
+    dir: outputs/${hydra:runtime.choices.experiment}/${now:%Y-%m-%d_%H-%M-%S}

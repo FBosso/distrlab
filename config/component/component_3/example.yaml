@@ -1,0 +1,5 @@
+_target_: models.component_3.decoder.Decoder
+targets: ${targets}
+n_embd: ${n_embd}
+horizon: ${horizon}
+dropout: ${dropout}

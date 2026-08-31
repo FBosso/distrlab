@@ -1,0 +1,5 @@
+_target_: models.component_1.encoder.Encoder
+features: ${features}
+n_embd: ${n_embd}
+inp_seq_len: ${inp_seq_len}
+dropout: ${dropout}
