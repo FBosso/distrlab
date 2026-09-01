@@ -1,16 +1,16 @@
 # distrlab
 
 **Distributed Training Lab (DisTrLab)** is an open-source, Hydra-based experimentation
-template: pull it and get straight to your experiments, with a clear path to scaling them
+template. Pull it and get straight to your experiments, with a clear path to scaling them
 across hundreds of GPUs without wiring anything yourself.
 
 You write the code for your architecture, drop it in the right place, and pair it with a
 config file per component. That's it, you're ready to scale. Want to swap a backbone for
 a benchmark, or go from "an idea on my laptop" to a DDP run on an HPC cluster? Thanks to
-Hydra, that's just a config change, not a rewrite: one `Trainer` (`src/trainer.py`), one
-config tree, and the same `src/main.py` drive every launch path, local or PBS/torchrun on 
-HPC. Interrupted runs resume automatically too: model, optimizer, and
-scheduler state are checkpointed regularly by design.
+Hydra, that's just a config change: one `Trainer` (`src/trainer.py`), one config tree, 
+and the same `src/main.py` drive every launch path, local or PBS/torchrun on HPC. 
+Interrupted runs resume automatically too: model, optimizer, and scheduler state are 
+checkpointed regularly by design.
 
 Ships with a minimal, synthetic-data example (encoder -> latent -> decoder, trained on a
 generated sine-mixture series) so the whole stack runs with zero setup. Swap it for your
